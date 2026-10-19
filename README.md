@@ -1,6 +1,6 @@
-# TKMNM Cargo website
+# Tkmnm Holdings website
 
-One-page static site for TKMNM Cargo (Tkmnm Holdings LLC): air freight from New York to Ashgabat, Turkmenistan.
+One-page static site for Tkmnm Holdings LLC: digital products for the transportation industry (YolTrans, El-Pochta, YallaMachines, VIN truck identifier) and TKMNM Cargo air freight from New York to Ashgabat.
 
 - `index.html` — the page
 - `style.css` — styles
