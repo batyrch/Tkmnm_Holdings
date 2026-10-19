@@ -1,6 +1,6 @@
 # Tkmnm Holdings website
 
-One-page static site for Tkmnm Holdings LLC: digital products for the transportation industry (YolTrans, El-Pochta, YallaMachines, VIN truck identifier) and TKMNM Cargo air freight from New York to Ashgabat.
+One-page static site for Tkmnm Holdings LLC: digital products for the transportation industry (YolTrans, El-Pochta, YallaMachines, VIN truck identifier, GPS tracking), web & AI services, and freight & freight forwarding.
 
 - `index.html` — the page
 - `style.css` — styles
