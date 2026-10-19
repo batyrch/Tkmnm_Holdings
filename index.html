@@ -15,7 +15,10 @@
         <img src="favicon.svg" alt="" width="32" height="32">
         <span>TKMNM Cargo</span>
       </a>
-      <nav class="nav" aria-label="Main">
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="site-nav" aria-label="Main">
         <a href="#services">Cargo</a>
         <a href="#how">How it works</a>
         <a href="#digital">Digital</a>
@@ -162,6 +165,24 @@
       <p>&copy; <span id="year">2026</span> Tkmnm Holdings LLC</p>
     </div>
   </footer>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <div class="mobile-bar">
+    <a class="btn" href="tel:+19297410064">Call</a>
+    <a class="btn btn-outline" href="mailto:tkmnmholdings@gmail.com">Email</a>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    var toggle = document.querySelector('.menu-toggle');
+    var header = document.querySelector('.site-header');
+    function setMenu(open) {
+      header.classList.toggle('menu-open', open);
+      toggle.setAttribute('aria-expanded', open);
+      toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    }
+    toggle.addEventListener('click', function () { setMenu(!header.classList.contains('menu-open')); });
+    document.querySelectorAll('#site-nav a').forEach(function (a) {
+      a.addEventListener('click', function () { setMenu(false); });
+    });
+  </script>
 </body>
 </html>
